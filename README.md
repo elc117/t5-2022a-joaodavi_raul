@@ -85,13 +85,19 @@ Essa classe de objetos destina-se à instanciação de quadrados voadores. Como 
   <img src="https://user-images.githubusercontent.com/85958904/184791113-eab1f326-0e20-453d-8c4b-53d88f088ed2.png">
 </p>
 
-
+O script de movimento do jogador, logo no seu construtor, captura os componentes do player (setados na engine) para que possa usa-los em suas funções. O player possuí também outros atributos como booleanos de controle e parâmetros setados na interface gráfica do programador. Na render são chamadas funções, que tem como objetivo capturar inputs e transforma-los em movimentos, assim como controlar as animações.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85958904/184791121-ae50a26b-2ee2-490c-9323-66efd3b04587.png">
 </p>
 
+A função run utiliza uma abstração do unity, que melhora (suaviza) o movimento do player, utilizando sua função "getAxis", ja a função jump utiliza a utilidade padrão para detecção de inputs (nesse caso, a tecla espaço precionada). A função FlipSprite apenas altera a rotação horizontal do sprite para onde o player estiver olhando.
+
 ## Parte da Criação da Fase
+
+### Criação de Mapa
+
+Aqui é mostrada a facilidade com a qual qualquer pessoa que desejar expandir o projeto pode construir mapa. Os objetos plataformas são instanciados imediatamente com suas físicas calculadas e o player pode ser movido antes do modo "Play" para testes.
 
 https://user-images.githubusercontent.com/85958904/184787378-259ee0b5-f296-4b64-84f6-3dc269fb61e3.mp4
 
