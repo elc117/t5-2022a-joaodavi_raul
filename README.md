@@ -9,6 +9,10 @@
 
 O objetivo do trabalho é a criação de um projeto inicial de um jogo que contenha o básico para uma pequena gameplay, utilizando a engine Unity de forma a aplicar conceitos e técnicas aprendidos relacionados à programação orientada a objetos. Anexaremos a este read.me alguns vídeos e explicações do que foi realizado, além dos arquivos principais do projeto do jogo.
 
+### Ideia do Jogo
+
+https://user-images.githubusercontent.com/85958904/184799892-10e08e56-aff3-45ea-be82-b0c4846657d0.mp4
+
 ## Breve Gameplay
 
 https://user-images.githubusercontent.com/85958904/184786789-f904fcf2-29fd-4cc7-8407-cea623f852bd.mp4
