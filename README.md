@@ -20,6 +20,7 @@ https://user-images.githubusercontent.com/85958904/184787378-259ee0b5-f296-4b64-
 ## Links
 
 - [Repositório com os arquivos do jogo](https://github.com/Raaulsthub/weAreNothing)
-
-
-
+- [Documentação do Unity](https://docs.unity3d.com/Manual/index.html)
+- [Documentação do C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
+- [Site de onde os Sprites foram retirados](https://itch.io/game-assets)
+- [Site de onde o Background foi retirado](https://craftpix.net/)
