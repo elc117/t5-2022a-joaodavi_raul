@@ -29,13 +29,13 @@ Nessa imagem é mostrado o campo de configuração de áudio. Mais especificamen
   <img src="https://user-images.githubusercontent.com/85958904/184790441-0df1d358-2b98-465d-8495-69eb1273dcca.png">
 </p>
 
-Aqui temos uma visão dos atributos da classe Player, que tem um objeto instanciado no jogo. Essa classe possuí compontentes como: Um corpo rígido (para cálculos de gravidade e massa), um colisor em formato de capsula (formato aproximado do objeto) e um colisor de formato de caixa (simula o pé do personagem, fator importante na lógica de pulos usada). Também possuí um script de movimento, que pega inputs do teclado e transforma-os em movimento. O script será explicado.
+Aqui temos uma visão dos atributos da classe Player, que tem um objeto instanciado no jogo. Essa classe possui componentes como: Um corpo rígido (para cálculos de gravidade e massa), um colisor em formato de cápsula (formato aproximado do objeto) e um colisor de formato de caixa (simula o pé do personagem, fator importante na lógica de pulos usada). Também possui um script de movimento, que pega inputs do teclado e transforma-os em movimento. O script será explicado.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85958904/184790511-b006bd82-3334-462e-be0b-9c6f90e1a1d7.png">
 </p>
 
-Na imagem acima, apresentamos uma classe chamada Enemy Spawner, que tem por objetivo instanciar os objetos quadráticos que dificultam a vida do jogador. É uma classe bem mais simples, que possuí apenas um Transform (acopla atributos posicionais em âmbitos 2D e 3D) e um script.
+Na imagem acima, apresentamos uma classe chamada Enemy Spawner, que tem por objetivo instanciar os objetos quadráticos que dificultam a vida do jogador. É uma classe bem mais simples, que possui apenas um Transform (acopla atributos posicionais em âmbitos 2D e 3D) e um script.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85958904/184790544-c77eb711-ff61-4deb-9318-697d5b079cb1.png">
@@ -59,7 +59,7 @@ Essa janela é chamada de "Animator", é utilizada para controlar transições e
   <img src="https://user-images.githubusercontent.com/85958904/184791076-55781644-5931-45a6-85c1-2bbf06d8af02.png">
 </p>
 
-Um level é mais comumente chamado de "Scene", e objetos do jogo podem transitar entre cenas. No nosso pequeno projeto foi criada apenas uma cena. Mas outras podem ser facilmente criadas, inclusive com os conteúdos de outras cenas ja antes existentes, utilizando o copia e cola dentro do gerenciador de arquivos da interface gráfica.
+Um level é mais comumente chamado de "Scene", e objetos do jogo podem transitar entre cenas. No nosso pequeno projeto foi criada apenas uma cena. Mas outras podem ser facilmente criadas, inclusive com os conteúdos de outras cenas já antes existentes, utilizando o copia e cola dentro do gerenciador de arquivos da interface gráfica.
 
 ### Programação de Comportamentos e Atributos de Objetos
 
@@ -79,19 +79,19 @@ Esse objeto se localiza na extrema esquerda do mapa e tem a exclusiva função d
   <img src="https://user-images.githubusercontent.com/85958904/184791096-652b5f09-a292-4698-8b68-b15affd728da.png">
 </p>
 
-Essa classe de objetos destina-se à instanciação de quadrados voadores. Como podemos ver, ela não tem uma render. Logo no construtor é chamada uma co-rotina que é o modo que usamos no Unity para chamar funções dados certos intervalos de tempoa, junto com a função yield (retorna objeto que espera um determinado tempo, para continuar). O intervalo em si é determinado pelo atributo spawningInterval, que é setado exclusivamente na engine. É possível observar que essa co-rotina não interfere nas outras funções do jogo, ou seja, é um código executado em paralelo (a nível de threads).
+Essa classe de objetos destina-se à instanciação de quadrados voadores. Como podemos ver, ela não tem uma render. Logo no construtor é chamada uma co-rotina que é o modo que usamos no Unity para chamar funções dados certos intervalos de tempo, junto com a função yield (retorna objeto que espera um determinado tempo, para continuar). O intervalo em si é determinado pelo atributo spawningInterval, que é setado exclusivamente na engine. É possível observar que essa co-rotina não interfere nas outras funções do jogo, ou seja, é um código executado em paralelo (a nível de threads).
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85958904/184791113-eab1f326-0e20-453d-8c4b-53d88f088ed2.png">
 </p>
 
-O script de movimento do jogador, logo no seu construtor, captura os componentes do player (setados na engine) para que possa usa-los em suas funções. O player possuí também outros atributos como booleanos de controle e parâmetros setados na interface gráfica do programador. Na render são chamadas funções, que tem como objetivo capturar inputs e transforma-los em movimentos, assim como controlar as animações.
+O script de movimento do jogador, logo no seu construtor, captura os componentes do player (setados na engine) para que possa usá-los em suas funções. O player possui também outros atributos como booleanos de controle e parâmetros setados na interface gráfica do programador. Na render são chamadas funções, que tem como objetivo capturar inputs e transformá-los em movimentos, assim como controlar as animações.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85958904/184791121-ae50a26b-2ee2-490c-9323-66efd3b04587.png">
 </p>
 
-A função run utiliza uma abstração do unity, que melhora (suaviza) o movimento do player, utilizando sua função "getAxis", ja a função jump utiliza a utilidade padrão para detecção de inputs (nesse caso, a tecla espaço precionada). A função FlipSprite apenas altera a rotação horizontal do sprite para onde o player estiver olhando.
+A função run utiliza uma abstração do unity, que melhora (suaviza) o movimento do player, utilizando sua função "getAxis", já a função jump utiliza a utilidade padrão para detecção de inputs (nesse caso, a tecla espaço pressionada). A função FlipSprite apenas altera a rotação horizontal do sprite para onde o player estiver olhando.
 
 ## Ilustração da Criação da Fase
 
