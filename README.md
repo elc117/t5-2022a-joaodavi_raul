@@ -15,13 +15,21 @@ https://user-images.githubusercontent.com/85958904/184786789-f904fcf2-29fd-4cc7-
 
 ## Explicação sobre o funcionamento/Criação do Jogo
 
+Na engine Unity, as partes mais mecânicas do jogo, como programação de contatos, gravidade, sons, colisões, animações e sprites são feitas na interface gráfica disponibilizada, para que o programador possa focar em programar os comportamentos dos objetos, e seu jogo seja desenvolvido mais rapidamente.
+
+### A seguir, são mostradas algumas abstrações da engine
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85958904/184790046-61c13243-684e-461c-99b7-dc6f21096f48.png">
 </p>
 
+Nessa imagem é mostrado o campo de configuração de áudio. Mais especificamente, a música de fundo do jogo. O objeto do tipo "Audio" é acoplado na câmera, para sempre acompanhar a visão do jogador e manter sempre o mesmo volume.
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85958904/184790441-0df1d358-2b98-465d-8495-69eb1273dcca.png">
 </p>
+
+Aqui temos uma visão dos atributos da classe Player, que tem um objeto instanciado no jogo. Essa classe possuí compontentes como: Um corpo rígido (para cálculos de gravidade e massa), um colisor em formato de caixa
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85958904/184790511-b006bd82-3334-462e-be0b-9c6f90e1a1d7.png">
