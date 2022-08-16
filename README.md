@@ -71,7 +71,7 @@ Aqui temos uma visão dos atributos da classe Player, que tem um objeto instanci
   <img src="https://user-images.githubusercontent.com/85958904/184791121-ae50a26b-2ee2-490c-9323-66efd3b04587.png">
 </p>
 
-## Parte da Criação da Fase
+## Ilustração da Criação da Fase
 
 https://user-images.githubusercontent.com/85958904/184787378-259ee0b5-f296-4b64-84f6-3dc269fb61e3.mp4
 
