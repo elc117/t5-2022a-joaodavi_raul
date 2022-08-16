@@ -93,7 +93,7 @@ O script de movimento do jogador, logo no seu construtor, captura os componentes
 
 A função run utiliza uma abstração do unity, que melhora (suaviza) o movimento do player, utilizando sua função "getAxis", ja a função jump utiliza a utilidade padrão para detecção de inputs (nesse caso, a tecla espaço precionada). A função FlipSprite apenas altera a rotação horizontal do sprite para onde o player estiver olhando.
 
-## Parte da Criação da Fase
+## Ilustração da Criação da Fase
 
 ### Criação de Mapa
 
