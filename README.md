@@ -67,17 +67,25 @@ Um level é mais comumente chamado de "Scene", e objetos do jogo podem transitar
   <img src="https://user-images.githubusercontent.com/85958904/184791079-42ae1da2-ea03-4f7f-94e9-8d40a1da8b8d.png">
 </p>
 
+Código que controla objetos quadráticos do jogo (os que voam da esquerda para a direita e servem tanto para atrapalhar quanto para ajudar o jogador). Basicamente o importante é que temos um atributo "xVelocity" que pode ser escolhido pelo objeto que instancia esses quadrados ou até mesmo na engine. Além disso, temos a função "render()" que é chamada a cada frame, e move o corpo físico do objeto para a esquerda do mapa, alterando a posição x e mantendo y sempre livre para mudar conforme interferências externas (contato com o player ou com plataformas / objetos voadores.
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85958904/184791085-a71412c8-df75-4778-a694-df7c1c72dd6d.png">
 </p>
+
+Esse objeto se localiza na extrema esquerda do mapa e tem a exclusiva função de destruir quaisquer objetos (no caso do jogo sempre serão os quadrados voadores) assim que houver colisão com tais (onCollisionEnter2D).
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85958904/184791096-652b5f09-a292-4698-8b68-b15affd728da.png">
 </p>
 
+Essa classe de objetos destina-se à instanciação de quadrados voadores. Como podemos ver, ela não tem uma render. Logo no construtor é chamada uma co-rotina que é o modo que usamos no Unity para chamar funções dados certos intervalos de tempoa, junto com a função yield (retorna objeto que espera um determinado tempo, para continuar). O intervalo em si é determinado pelo atributo spawningInterval, que é setado exclusivamente na engine. É possível observar que essa co-rotina não interfere nas outras funções do jogo, ou seja, é um código executado em paralelo (a nível de threads).
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85958904/184791113-eab1f326-0e20-453d-8c4b-53d88f088ed2.png">
 </p>
+
+
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85958904/184791121-ae50a26b-2ee2-490c-9323-66efd3b04587.png">
