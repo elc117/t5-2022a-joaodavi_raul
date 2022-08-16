@@ -32,11 +32,35 @@ https://user-images.githubusercontent.com/85958904/184786789-f904fcf2-29fd-4cc7-
 </p>
 
 <p align="center">
-  <img src="">
+  <img src="https://user-images.githubusercontent.com/85958904/184791010-c513b141-1c89-4cdd-a76b-e94a9484c80a.png">
 </p>
 
 <p align="center">
-  <img src="">
+  <img src="https://user-images.githubusercontent.com/85958904/184791042-6f9dd3a4-06b7-462b-a0f9-edf8471539d3.png">
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/85958904/184791076-55781644-5931-45a6-85c1-2bbf06d8af02.png">
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/85958904/184791079-42ae1da2-ea03-4f7f-94e9-8d40a1da8b8d.png">
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/85958904/184791085-a71412c8-df75-4778-a694-df7c1c72dd6d.png">
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/85958904/184791096-652b5f09-a292-4698-8b68-b15affd728da.png">
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/85958904/184791113-eab1f326-0e20-453d-8c4b-53d88f088ed2.png">
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/85958904/184791121-ae50a26b-2ee2-490c-9323-66efd3b04587.png">
 </p>
 
 ## Parte da Criação da Fase
